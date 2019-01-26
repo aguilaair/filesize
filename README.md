@@ -1,18 +1,18 @@
-filesize.dart
-=============
+Filesize
+========
 
-micro library that provides an easy way to get human readable file size strings
+A micro library that provides an easy way to get human readable file size strings
 
 ## Features
 
-- size can be passed as number or as string
-- optional parameter to specify numbers after comma/point
-- optional parameter to use the decimal system for calculation
+- Size can be passed as number or as string
+- Optional parameter to specify numbers after comma/point
+- Optional parameter to use the decimal system for calculation
 - Petabyte support :D
 
 ## Examples
 
-``` js
+``` dart
 filesize(1024);                   // "1 KB"
 filesize(664365320);           	  // "633.59 MB"
 filesize(4324324232343);          // "3.93 TB"
@@ -20,14 +20,14 @@ filesize(4324324232343);          // "3.93 TB"
 
 Optional parameter to specify numbers after comma/point:
 
-``` js
+``` dart
 filesize(664365320, 4);          // "633.5881 MB"
 filesize(4324324232343, 3);      // "3.932 TB"
 ```
 
-and to use the decimal system for calculation, e.g. 1000B = 1KB:
+And to use the decimal system for calculation, e.g. 1000B = 1KB:
 
-``` js
+``` dart
 filesize(664365320, 4, true);    // "664.3653 MB"
 filesize(4324324232343, 3, true);      // "4.324 TB"
 ```
