@@ -1,63 +1,38 @@
-import "./../lib/filesize.dart";
+import "package:test/test.dart";
+import "../lib/filesize.dart";
 
-void main(){
-
+void main() {
   int divider = 1024;
 
-  print(filesize("1025"));
+  test("10", () {
+    expect(filesize(10), "10 B");
+  });
 
-  print(filesize(10));
+  test("10 string", () {
+    expect(filesize("10"), "10 B");
+  });
 
-  print(filesize(1025));
+  test("1025", () {
+    expect(filesize(1025, 0), "1 KB");
+  });
 
-  print(filesize(divider));
+  test("divider", () {
+    expect(filesize(divider), "1 KB");
+  });
 
-  print(filesize(14365320));
+  test("divider", () {
+    expect(filesize(divider), "1 KB");
+  });
 
-  print(filesize(divider*divider));
+  test("14365320", () {
+    expect(filesize(14365320), "13.70 MB");
+  });
 
-  print(filesize("${divider*divider}"));
+  test("664365320", () {
+    expect(filesize(664365320), "633.59 MB");
+  });
 
-  print(filesize(664365320));
-
-  print(filesize(divider*divider*divider));
-
-  print(filesize(1212312421412412));
-
-  print(filesize(divider*divider*divider*divider));
-
-  print(filesize(4324324232343));
-
-  print(filesize(divider*divider*divider*divider*divider));
-
-  print(filesize(5684324232343569));
-
-  divider = 1000;
-
-  print("\n");
-
-  print(filesize(10, 4, true));
-
-  print(filesize(1025, 4, true));
-
-  print(filesize(divider, 4, true));
-
-  print(filesize(14365320, 4, true));
-
-  print(filesize(divider*divider, 4, true));
-
-  print(filesize(664365320, 4, true));
-
-  print(filesize(divider*divider*divider, 4, true));
-
-  print(filesize(1212312421412412, 4, true));
-
-  print(filesize(divider*divider*divider*divider, 4, true));
-
-  print(filesize(4324324232343, 4, true));
-
-  print(filesize(divider*divider*divider*divider*divider));
-
-  print(filesize(5684324232343569, 4, true));
-
+  test("1212312421412412", () {
+    expect(filesize(1212312421412412), "1.08 PB");
+  });
 }
