@@ -9,6 +9,13 @@ A micro library that provides an easy way to get human readable file size string
 - Optional parameter to specify numbers after comma/point
 - Petabyte support
 
+## Install 
+
+```yaml
+dependencies:
+  filesize: ^1.0.0
+```
+
 ## Examples
 
 ``` dart
@@ -26,10 +33,10 @@ filesize(4324324232343, 3);      // "3.932 TB"
 
 ## Information
 
-filesize.dart is inspired by [filesize.js](https://github.com/avoidwork/filesize.js "filesize.js")
+Inspired by [filesize.js](https://github.com/avoidwork/filesize.js "filesize.js")
 
 
 #### License
 
-filesize.dart is licensed under [BSD-3](http://www.opensource.org/licenses/BSD-3-Clause "BSD-3")
+Licensed under [BSD-3](http://www.opensource.org/licenses/BSD-3-Clause "BSD-3")
 
