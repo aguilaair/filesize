@@ -8,12 +8,10 @@
  * the optional boolean parameter 'decimal' specifies if the decimal system should be used, e.g. 1KB = 1000B (default is false)
  *
  *  */
-String filesize(size, [int round = 2, bool decimal = false]) {
+String filesize(size, [int round = 2]) {
   int divider = 1024;
 
   size = int.parse(size.toString());
-
-  if (decimal) divider = 1000;
 
   if (size < divider) return "$size B";
 
