@@ -1,0 +1,10 @@
+.project
+.dart_tool/
+.pub
+pubspec.lock
+build/
+packages
+.packages
+test/out
+.idea/
+.history
