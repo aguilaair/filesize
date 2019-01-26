@@ -1,5 +1,7 @@
 name: filesize
 description: A package to get humanized file sizes
+author: synw <synwe@yahoo.com>
+homepage: https://github.com/synw/filesize
 
 version: 1.0.0
 
