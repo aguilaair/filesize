@@ -35,4 +35,8 @@ void main() {
   test("1212312421412412", () {
     expect(filesize(1212312421412412), "1.08 PB");
   });
+
+  test("14365320 round", () {
+    expect(filesize(14365320, 0), "14 MB");
+  });
 }
