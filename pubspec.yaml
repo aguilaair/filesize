@@ -1,9 +1,9 @@
 name: filesize
-description: A package to get humanized file sizes
+description: A package to get humanized file sizes. Translate raw file size into human readable strings.
 author: synw <synwe@yahoo.com>
 homepage: https://github.com/synw/filesize
 
-version: 1.0.0
+version: 1.0.1
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
