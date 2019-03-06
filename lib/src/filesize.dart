@@ -1,17 +1,17 @@
-/**
- * method returns a human readable string representing a file size
- *
- * size can be passed as number or as string
- *
- * the optional parameter 'count' specifies the number of numbers after comma/point (default is 2)
- *
- * the optional boolean parameter 'decimal' specifies if the decimal system should be used, e.g. 1KB = 1000B (default is false)
- *
- *  */
+/// A method returns a human readable string representing a file size
 String filesize(size, [int round = 2]) {
   int divider = 1024;
-
-  size = int.parse(size.toString());
+  /** 
+   * [size] can be passed as number or as string
+   *
+   * the optional parameter [round] specifies the number 
+   * of digits after comma/point (default is 2)
+   */
+  try {
+    size = int.parse(size.toString());
+  } catch (e) {
+    throw ("filesize: can not parse the size parameter: $e");
+  }
 
   if (size < divider) return "$size B";
 
