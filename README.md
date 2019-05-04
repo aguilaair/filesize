@@ -1,6 +1,7 @@
 # Filesize
 
-[![pub package](https://img.shields.io/pub/v/filesize.svg)](https://pub.dartlang.org/packages/filesize)
+[![pub package](https://img.shields.io/pub/v/filesize.svg)](https://pub.dartlang.org/packages/filesize) [![Build Status](https://travis-ci.org/synw/filesize.svg?branch=master)](https://travis-ci.org/synw/filesize) [![Coverage Status](https://coveralls.io/repos/github/synw/filesize/badge.svg?branch=master)](https://coveralls.io/github/synw/filesize?branch=master)
+
 
 A micro library that provides an easy way to get human readable file size strings
 
