@@ -9,7 +9,5 @@ test/out
 .idea/
 .history
 test/.test_coverage.dart
-coverage/*.html
-coverage/*.png
-coverage/*.svg
-coverage/src
+coverage/
+!coverage/lcov.info
