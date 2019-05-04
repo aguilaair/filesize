@@ -11,7 +11,7 @@ String filesize(dynamic size, [int round = 2]) {
   try {
     _size = int.parse(size.toString());
   } catch (e) {
-    throw ("Filesize: can not parse the size parameter: $e");
+    throw ArgumentError("Can not parse the size parameter: $e");
   }
 
   if (_size < divider) return "$_size B";
