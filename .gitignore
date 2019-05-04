@@ -8,3 +8,4 @@ packages
 test/out
 .idea/
 .history
+test/.test_coverage.dart

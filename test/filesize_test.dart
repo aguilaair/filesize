@@ -20,10 +20,6 @@ void main() {
     expect(filesize(divider), "1 KB");
   });
 
-  test("divider", () {
-    expect(filesize(divider), "1 KB");
-  });
-
   test("14365320", () {
     expect(filesize(14365320), "13.70 MB");
   });
@@ -39,4 +35,8 @@ void main() {
   test("14365320 round", () {
     expect(filesize(14365320, 0), "14 MB");
   });
+
+  /*test("wrong", () {
+    expect(filesize("wrong"), throwsException);
+  });*/
 }

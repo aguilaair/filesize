@@ -1,0 +1,21 @@
+language: dart
+
+dart:
+  - 2.0.0
+  - dev
+
+install:
+  - gem install coveralls-lcov
+
+script:
+  pub global run test_coverage
+
+after_success:
+  - coveralls-lcov coverage/lcov.info
+
+branches:
+  only: [master]
+
+cache:
+  directories:
+    - $HOME/.pub-cache
