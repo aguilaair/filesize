@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.3
+
+- Use pedantic for static analysis
+- Improve the tests
+- Add an example
+- Linting
+
 ## 1.0.2
 
 - Apply strict linting
