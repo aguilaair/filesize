@@ -14,25 +14,33 @@ String filesize(dynamic size, [int round = 2]) {
     throw ArgumentError("Can not parse the size parameter: $e");
   }
 
-  if (_size < divider) return "$_size B";
+  if (_size < divider) {
+    return "$_size B";
+  }
 
-  if (_size < divider * divider && _size % divider == 0)
+  if (_size < divider * divider && _size % divider == 0) {
     return "${(_size / divider).toStringAsFixed(0)} KB";
+  }
 
-  if (_size < divider * divider)
+  if (_size < divider * divider) {
     return "${(_size / divider).toStringAsFixed(round)} KB";
+  }
 
-  if (_size < divider * divider * divider && _size % divider == 0)
+  if (_size < divider * divider * divider && _size % divider == 0) {
     return "${(_size / (divider * divider)).toStringAsFixed(0)} MB";
+  }
 
-  if (_size < divider * divider * divider)
+  if (_size < divider * divider * divider) {
     return "${(_size / divider / divider).toStringAsFixed(round)} MB";
+  }
 
-  if (_size < divider * divider * divider * divider && _size % divider == 0)
+  if (_size < divider * divider * divider * divider && _size % divider == 0) {
     return "${(_size / (divider * divider * divider)).toStringAsFixed(0)} GB";
+  }
 
-  if (_size < divider * divider * divider * divider)
+  if (_size < divider * divider * divider * divider) {
     return "${(_size / divider / divider / divider).toStringAsFixed(round)} GB";
+  }
 
   if (_size < divider * divider * divider * divider * divider &&
       _size % divider == 0) {
