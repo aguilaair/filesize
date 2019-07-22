@@ -2,8 +2,6 @@ import "package:test/test.dart";
 import "../lib/filesize.dart";
 
 void main() {
-  int divider = 1024;
-
   test("10", () {
     expect(filesize(10), "10 B");
   });
@@ -12,31 +10,27 @@ void main() {
     expect(filesize("10"), "10 B");
   });
 
-  test("1025", () {
-    expect(filesize(1025, 0), "1 KB");
+  test("1024", () {
+    expect(filesize(1024), "1 KB");
   });
 
-  test("divider", () {
-    expect(filesize(divider), "1 KB");
+  test("1024 string", () {
+    expect(filesize("1024"), "1 KB");
   });
 
-  test("14365320", () {
-    expect(filesize(14365320), "13.70 MB");
+  test("1M", () {
+    expect(filesize(1024 * 1024), "1 MB");
   });
 
-  test("664365320", () {
-    expect(filesize(664365320), "633.59 MB");
+  test("1G", () {
+    expect(filesize(1024 * 1024 * 1024), "1 GB");
   });
 
-  test("1212312421412412", () {
-    expect(filesize(1212312421412412), "1.08 PB");
+  test("1T", () {
+    expect(filesize(1024 * 1024 * 1024 * 1024), "1 TB");
   });
 
-  test("14365320 round", () {
-    expect(filesize(14365320, 0), "14 MB");
+  test("1P", () {
+    expect(filesize(1024 * 1024 * 1024 * 1024 * 1024), "1 PB");
   });
-
-  /*test("wrong", () {
-    expect(filesize("wrong"), throwsException);
-  });*/
 }
