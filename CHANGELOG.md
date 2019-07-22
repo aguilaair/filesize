@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.0.4
+
+- Downgrade pedantic
+
 ## 1.0.3
 
 - Use pedantic for static analysis

@@ -3,7 +3,7 @@ description: A package to get humanized file sizes. Translate raw file size into
 author: synw <synwe@yahoo.com>
 homepage: https://github.com/synw/filesize
 
-version: 1.0.3
+version: 1.0.4
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
@@ -11,4 +11,4 @@ environment:
 dev_dependencies:
   test: ^1.5.1
   test_coverage: ^0.2.3
-  pedantic: ^1.6.0
+  pedantic: ^1.4.0
