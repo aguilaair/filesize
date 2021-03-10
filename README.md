@@ -1,6 +1,6 @@
 # Filesize
 
-[![pub package](https://img.shields.io/pub/v/filesize.svg)](https://pub.dartlang.org/packages/filesize_plus) [![Dart](https://github.com/aguilaair/filesize/actions/workflows/dart.yml/badge.svg)](https://github.com/aguilaair/filesize/actions/workflows/dart.yml) 
+[![pub package](https://img.shields.io/pub/v/filesize_plus.svg)](https://pub.dartlang.org/packages/filesize_plus) [![Dart](https://github.com/aguilaair/filesize/actions/workflows/dart.yml/badge.svg)](https://github.com/aguilaair/filesize/actions/workflows/dart.yml) 
 
 A micro library that provides an easy way to get human readable file size strings. Now with null safety!
 
