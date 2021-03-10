@@ -1,5 +1,5 @@
 import 'package:test/test.dart';
-import 'package:filesize/filesize.dart';
+import 'package:filesize_plus/filesize.dart';
 
 void main() {
   test('10', () {
