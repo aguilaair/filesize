@@ -1,4 +1,4 @@
-import 'package:filesize/filesize.dart';
+import 'package:filesize_plus/filesize_plus.dart';
 
 void main() {
   final fs = filesize(1024);
