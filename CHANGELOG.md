@@ -1,5 +1,10 @@
 # Changelog
 
+## 1.1.1
+
+ - Minor tweaks to Readm & CI
+ - Fix warnings from `dart analyze`
+
 ## 1.1.0
 
  - Updated to null safety
