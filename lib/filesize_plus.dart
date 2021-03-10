@@ -1,3 +1,3 @@
 library filesize;
 
-export 'src/filesize.dart';
+export 'src/filesize_plus.dart';

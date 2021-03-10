@@ -1,5 +1,11 @@
 # Changelog
 
+## 1.1.0
+
+ - Updated to null safety
+ - Added some tests
+ - Fix linter warnings
+
 ## 1.0.4
 
 - Downgrade pedantic
