@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.1.1
+## 1.1.1+1
 
  - Minor tweaks to Readme & CI
  - Fix warnings from `dart analyze`

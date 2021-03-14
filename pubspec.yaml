@@ -2,7 +2,7 @@ name: filesize_plus
 description: A package to get humanized file sizes. Translate raw file size into human readable strings. With null safety support!
 homepage: https://github.com/aguilaair/filesize
 
-version: 1.1.1
+version: 1.1.1+1
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
