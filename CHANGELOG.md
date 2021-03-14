@@ -2,7 +2,7 @@
 
 ## 1.1.1
 
- - Minor tweaks to Readm & CI
+ - Minor tweaks to Readme & CI
  - Fix warnings from `dart analyze`
 
 ## 1.1.0
